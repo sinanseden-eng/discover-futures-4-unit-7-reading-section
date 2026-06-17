@@ -143,28 +143,28 @@
             const [currentQ, setCurrentQ] = useState(0);
             const [showAnswer, setShowAnswer] = useState(false);
 
-            // 15 Total Questions (Original 5 T/F/NG + 5 old Fact/Opinion + 5 New High-Level Fact/Opinion)
+            // 15 Total Questions (Unit 7 Reading Text + General Fact/Opinion)
             const questions = [
-                // Original True/False/Not Given
-                { type: "T / F / NG", text: "The haremlik was a public area for hosting guests in an Ottoman home.", answer: "False" },
-                { type: "T / F / NG", text: "Working-class families in 19th-century Britain lived in cramped terraced houses.", answer: "True" },
-                { type: "T / F / NG", text: "Wood makes ryokans cool in the summer because it allows them to breathe.", answer: "True" },
-                { type: "T / F / NG", text: "Red is the only color that increases the human heart rate.", answer: "Not Given" },
-                { type: "T / F / NG", text: "Ottoman homes had permanent heavy dining tables in the sofa.", answer: "False" },
+                // True/False/Not Given (Based strictly on the provided Unit 7 Article on Page 73)
+                { type: "T / F / NG", text: "In sports like boxing and taekwondo, competitors wearing red win over 60% of matches when they have similar skill and strength to their opponent.", answer: "True" },
+                { type: "T / F / NG", text: "According to interior designer Jackie Bellini, sleeping in a purple bedroom is highly recommended for reducing stress.", answer: "False" },
+                { type: "T / F / NG", text: "The sleep pattern survey conducted by hotel chain Indigo included participants from five different European countries.", answer: "Not Given" },
+                { type: "T / F / NG", text: "In a 1970s experiment, participants felt physically sick eating blue steak because the meat tasted rotten.", answer: "False" },
+                { type: "T / F / NG", text: "Charles Spence argues that our eyes influence our experience of food even more than our sense of smell and taste.", answer: "True" },
                 
-                // Fact vs Opinion (Set 1)
-                { type: "Fact vs Opinion", text: "Exposure to blue light before bedtime disrupts the body's production of melatonin.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "A permanent, traditional home is essential for a teenager's emotional development and sense of security.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "In the 17th century, European coffeehouses served as vital centers for social and intellectual debate.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "The vibrant colors of the ocean are visually more soothing than the green hues of a forest.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Because working-class families lived in cramped spaces, they had to be highly organized to fit basic beds and cooking pots inside.", answer: "Fact" },
+                // Fact vs Opinion (Set 1: General & Color)
+                { type: "Fact vs Opinion", text: "Blue light from smartphone screens prevents the human body from producing sleep hormones.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Bright, vibrant colors look terrible in a relaxing space like a library.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "A 2023 study found that consumers are 40% more likely to click a digital ad if the button is red.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "The most beautiful paintings in the world are the ones that use warm color palettes.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "Human eyes contain special cells called cones that allow us to distinguish between millions of colors.", answer: "Fact" },
                 
-                // NEW High-Level Fact vs Opinion (Set 2)
-                { type: "Fact vs Opinion", text: "Governments ought to heavily tax the production of non-recyclable plastic to force companies to find versatile, eco-friendly alternatives.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "A 2023 psychological study demonstrated that consumers are 40% more likely to click on a digital advertisement if the primary button is red.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Living in a cramped, densely populated megacity is ultimately more damaging to human mental health than living in isolation in a rural environment.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Historical records verify that the grand central hall, or 'sofa', in wealthy Ottoman homes was utilized as a multifunctional gathering space.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "It is the responsibility of wealthy nations to repatriate all stolen historical artifacts back to their original countries of origin without exception.", answer: "Opinion" }
+                // Fact vs Opinion (Set 2: High-Level)
+                { type: "Fact vs Opinion", text: "Governments should ban food companies from using artificial food dyes in children's snacks.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "Historical records show that in ancient Rome, purple dye was so expensive it was restricted to the Emperor.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Black is ultimately the most professional and sophisticated color to wear to a job interview.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "Color blindness is a genetic condition that affects a higher percentage of men than women globally.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Schools must repaint all their classrooms light green because it is the only way to help students focus.", answer: "Opinion" }
             ];
 
             const nextQuestion = () => {
