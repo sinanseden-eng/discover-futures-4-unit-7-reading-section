@@ -145,34 +145,34 @@
             // 22 Total Questions (Unit 7 Reading Text + General Fact/Opinion)
             const questions = [
                 // True/False/Not Given (Based strictly on the provided Unit 7 Article on Page 73)
-                { type: "T / F / NG", text: "In sports like boxing and taekwondo, competitors wearing red win over 60% of matches when they have similar skill and strength to their opponent.", answer: "True" },
-                { type: "T / F / NG", text: "If one combat sports competitor is much stronger and more skilled than their opponent, wearing a red uniform will still significantly increase their chances of winning.", answer: "False" },
-                { type: "T / F / NG", text: "According to interior designer Jackie Bellini, sleeping in a purple bedroom is highly recommended for reducing stress.", answer: "False" },
-                { type: "T / F / NG", text: "The sleep pattern survey conducted by hotel chain Indigo included participants from five different European countries.", answer: "Not Given" },
-                { type: "T / F / NG", text: "Interior designer Jackie Bellini prefers using blue paint instead of blue wallpaper when decorating hotel bedrooms.", answer: "Not Given" },
-                { type: "T / F / NG", text: "In a 1970s experiment, participants felt physically sick eating blue steak because the meat tasted rotten.", answer: "False" },
-                { type: "T / F / NG", text: "Charles Spence argues that our eyes influence our experience of food even more than our sense of smell and taste.", answer: "True" },
-                { type: "T / F / NG", text: "In a recent taste test, a green drink contained more sugar than a pink drink, but participants still thought the pink drink tasted sweeter.", answer: "True" },
+                { type: "T / F / NG", text: "In sports like boxing and taekwondo, competitors wearing red win over 60% of matches when they have similar skill and strength to their opponent.", answer: "True", evidence: "Article A states: 'However, in matches between competitors with a similar level of strength and skill, over 60% were won by people dressed in red.'" },
+                { type: "T / F / NG", text: "If one combat sports competitor is much stronger and more skilled than their opponent, wearing a red uniform will still significantly increase their chances of winning.", answer: "False", evidence: "Article A states: 'The researchers found that, when one competitor was much better than the other, the color of the uniform had no effect on the results.'" },
+                { type: "T / F / NG", text: "According to interior designer Jackie Bellini, sleeping in a purple bedroom is highly recommended for reducing stress.", answer: "False", evidence: "Article B states: 'Purple scored worst in the survey... According to Jackie, it's thought that the color stimulates creativity, which makes it an environment where vivid dreams and nightmares are more likely.'" },
+                { type: "T / F / NG", text: "The sleep pattern survey conducted by hotel chain Indigo included participants from five different European countries.", answer: "Not Given", evidence: "Article B mentions the survey involved '200 homes around the country', but it does not specify anything about 'five different European countries'." },
+                { type: "T / F / NG", text: "Interior designer Jackie Bellini prefers using blue paint instead of blue wallpaper when decorating hotel bedrooms.", answer: "Not Given", evidence: "Article B mentions Jackie Bellini as an interior designer and color expert, but it does not state whether she prefers paint or wallpaper." },
+                { type: "T / F / NG", text: "In a 1970s experiment, participants felt physically sick eating blue steak because the meat tasted rotten.", answer: "False", evidence: "Article C states: 'The guests' visual disgust was strong enough to cause sickness, even though they knew the meat tasted good.'" },
+                { type: "T / F / NG", text: "Charles Spence argues that our eyes influence our experience of food even more than our sense of smell and taste.", answer: "True", evidence: "Article C states: 'According to Oxford's Charles Spence, however, our eyes influence our experience of food even more than our tongues and noses.'" },
+                { type: "T / F / NG", text: "In a recent taste test, a green drink contained more sugar than a pink drink, but participants still thought the pink drink tasted sweeter.", answer: "True", evidence: "Article C states: 'In recent tests, many people thought a pink drink tasted sweeter than a green one, even though the green one contained 10% more sugar.'" },
                 
                 // Fact vs Opinion (Set 1: General & Color)
-                { type: "Fact vs Opinion", text: "Blue light from smartphone screens prevents the human body from producing sleep hormones.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Bright, vibrant colors look terrible in a relaxing space like a library.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "A 2023 study found that consumers are 40% more likely to click a digital ad if the button is red.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "The most beautiful paintings in the world are the ones that use warm color palettes.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Human eyes contain special cells called cones that allow us to distinguish between millions of colors.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Blue light from smartphone screens prevents the human body from producing sleep hormones.", answer: "Fact", evidence: "This is a medical claim that can be objectively proven or disproven using scientific measurement." },
+                { type: "Fact vs Opinion", text: "Bright, vibrant colors look terrible in a relaxing space like a library.", answer: "Opinion", evidence: "This relies on personal taste. Someone else might think bright colors look great in a library." },
+                { type: "Fact vs Opinion", text: "A 2023 study found that consumers are 40% more likely to click a digital ad if the button is red.", answer: "Fact", evidence: "This statement relies on verifiable data and statistics from a specific study." },
+                { type: "Fact vs Opinion", text: "The most beautiful paintings in the world are the ones that use warm color palettes.", answer: "Opinion", evidence: "Beauty is completely subjective and cannot be measured scientifically." },
+                { type: "Fact vs Opinion", text: "Human eyes contain special cells called cones that allow us to distinguish between millions of colors.", answer: "Fact", evidence: "This is an anatomical claim that can be verified by biology textbooks and research." },
                 
                 // Fact vs Opinion (Set 2: High-Level)
-                { type: "Fact vs Opinion", text: "Governments should ban food companies from using artificial food dyes in children's snacks.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Historical records show that in ancient Rome, purple dye was so expensive it was restricted to the Emperor.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Black is ultimately the most professional and sophisticated color to wear to a job interview.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Color blindness is a genetic condition that affects a higher percentage of men than women globally.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Schools must repaint all their classrooms light green because it is the only way to help students focus.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "Governments should ban food companies from using artificial food dyes in children's snacks.", answer: "Opinion", evidence: "Words like 'should' express a belief, feeling, or recommendation, not a provable fact." },
+                { type: "Fact vs Opinion", text: "Historical records show that in ancient Rome, purple dye was so expensive it was restricted to the Emperor.", answer: "Fact", evidence: "Historical records can be objectively checked to prove or disprove this statement." },
+                { type: "Fact vs Opinion", text: "Black is ultimately the most professional and sophisticated color to wear to a job interview.", answer: "Opinion", evidence: "Professionalism in color is a matter of cultural or personal preference, not an objective truth." },
+                { type: "Fact vs Opinion", text: "Color blindness is a genetic condition that affects a higher percentage of men than women globally.", answer: "Fact", evidence: "This is a medical and statistical claim that can be verified through data." },
+                { type: "Fact vs Opinion", text: "Schools must repaint all their classrooms light green because it is the only way to help students focus.", answer: "Opinion", evidence: "Saying what someone 'must' do, or claiming it is the 'only way', is a subjective recommendation." },
                 
                 // Fact vs Opinion (Set 3: Additional)
-                { type: "Fact vs Opinion", text: "The color orange is created by mixing red and yellow pigments together in equal parts.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Painting a hospital waiting room orange is a terrible idea because it makes people feel far too energetic.", answer: "Opinion" },
-                { type: "Fact vs Opinion", text: "Camouflage clothing uses colors like green, brown, and gray to help soldiers blend in with natural environments.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Winter is definitely the most depressing time of the year because the sky is constantly cloudy and gray.", answer: "Opinion" }
+                { type: "Fact vs Opinion", text: "The color orange is created by mixing red and yellow pigments together in equal parts.", answer: "Fact", evidence: "This is a verifiable physical property of pigments and color mixing." },
+                { type: "Fact vs Opinion", text: "Painting a hospital waiting room orange is a terrible idea because it makes people feel far too energetic.", answer: "Opinion", evidence: "Calling it a 'terrible idea' is a subjective judgment." },
+                { type: "Fact vs Opinion", text: "Camouflage clothing uses colors like green, brown, and gray to help soldiers blend in with natural environments.", answer: "Fact", evidence: "The design purpose and color composition of camouflage can be factually verified." },
+                { type: "Fact vs Opinion", text: "Winter is definitely the most depressing time of the year because the sky is constantly cloudy and gray.", answer: "Opinion", evidence: "Emotions tied to seasons are subjective; some people absolutely love winter." }
             ];
 
             const nextQuestion = () => {
@@ -237,8 +237,16 @@
 
                         <div className="min-h-[4rem] mb-8 flex justify-center items-center">
                             {showAnswer ? (
-                                <div className="animate-fade-in inline-block bg-emerald-500 text-white font-black text-3xl px-8 py-3 rounded-xl transform scale-110 shadow-lg border-2 border-emerald-400">
-                                    {questions[currentQ].answer}
+                                <div className="animate-fade-in flex flex-col items-center">
+                                    <div className="inline-block bg-emerald-500 text-white font-black text-3xl px-8 py-3 rounded-xl transform scale-110 shadow-lg border-2 border-emerald-400 mb-6">
+                                        {questions[currentQ].answer}
+                                    </div>
+                                    {questions[currentQ].evidence && (
+                                        <div className="bg-slate-700 p-5 rounded-xl border border-slate-600 max-w-2xl text-left shadow-inner">
+                                            <span className="text-emerald-400 font-bold text-xs uppercase tracking-widest block mb-2"><i className="fas fa-search mr-1"></i> Evidence / Reasoning:</span>
+                                            <p className="text-slate-300 text-lg leading-relaxed italic">"{questions[currentQ].evidence}"</p>
+                                        </div>
+                                    )}
                                 </div>
                             ) : (
                                 <button 
