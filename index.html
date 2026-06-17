@@ -82,7 +82,6 @@
                     <div 
                         className="absolute top-0 right-0 w-20 h-20 z-50 cursor-pointer" 
                         onClick={() => setActiveTab('lesson2')}
-                        title="Secret Transition to Lesson 2"
                     ></div>
                     
                     <div className="relative z-10">
@@ -143,14 +142,17 @@
             const [currentQ, setCurrentQ] = useState(0);
             const [showAnswer, setShowAnswer] = useState(false);
 
-            // 15 Total Questions (Unit 7 Reading Text + General Fact/Opinion)
+            // 22 Total Questions (Unit 7 Reading Text + General Fact/Opinion)
             const questions = [
                 // True/False/Not Given (Based strictly on the provided Unit 7 Article on Page 73)
                 { type: "T / F / NG", text: "In sports like boxing and taekwondo, competitors wearing red win over 60% of matches when they have similar skill and strength to their opponent.", answer: "True" },
+                { type: "T / F / NG", text: "If one combat sports competitor is much stronger and more skilled than their opponent, wearing a red uniform will still significantly increase their chances of winning.", answer: "False" },
                 { type: "T / F / NG", text: "According to interior designer Jackie Bellini, sleeping in a purple bedroom is highly recommended for reducing stress.", answer: "False" },
                 { type: "T / F / NG", text: "The sleep pattern survey conducted by hotel chain Indigo included participants from five different European countries.", answer: "Not Given" },
+                { type: "T / F / NG", text: "Interior designer Jackie Bellini prefers using blue paint instead of blue wallpaper when decorating hotel bedrooms.", answer: "Not Given" },
                 { type: "T / F / NG", text: "In a 1970s experiment, participants felt physically sick eating blue steak because the meat tasted rotten.", answer: "False" },
                 { type: "T / F / NG", text: "Charles Spence argues that our eyes influence our experience of food even more than our sense of smell and taste.", answer: "True" },
+                { type: "T / F / NG", text: "In a recent taste test, a green drink contained more sugar than a pink drink, but participants still thought the pink drink tasted sweeter.", answer: "True" },
                 
                 // Fact vs Opinion (Set 1: General & Color)
                 { type: "Fact vs Opinion", text: "Blue light from smartphone screens prevents the human body from producing sleep hormones.", answer: "Fact" },
@@ -164,7 +166,13 @@
                 { type: "Fact vs Opinion", text: "Historical records show that in ancient Rome, purple dye was so expensive it was restricted to the Emperor.", answer: "Fact" },
                 { type: "Fact vs Opinion", text: "Black is ultimately the most professional and sophisticated color to wear to a job interview.", answer: "Opinion" },
                 { type: "Fact vs Opinion", text: "Color blindness is a genetic condition that affects a higher percentage of men than women globally.", answer: "Fact" },
-                { type: "Fact vs Opinion", text: "Schools must repaint all their classrooms light green because it is the only way to help students focus.", answer: "Opinion" }
+                { type: "Fact vs Opinion", text: "Schools must repaint all their classrooms light green because it is the only way to help students focus.", answer: "Opinion" },
+                
+                // Fact vs Opinion (Set 3: Additional)
+                { type: "Fact vs Opinion", text: "The color orange is created by mixing red and yellow pigments together in equal parts.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Painting a hospital waiting room orange is a terrible idea because it makes people feel far too energetic.", answer: "Opinion" },
+                { type: "Fact vs Opinion", text: "Camouflage clothing uses colors like green, brown, and gray to help soldiers blend in with natural environments.", answer: "Fact" },
+                { type: "Fact vs Opinion", text: "Winter is definitely the most depressing time of the year because the sky is constantly cloudy and gray.", answer: "Opinion" }
             ];
 
             const nextQuestion = () => {
@@ -188,7 +196,6 @@
                         <div 
                             className="absolute top-0 right-0 w-20 h-20 z-50 cursor-pointer" 
                             onClick={() => setActiveTab('lesson1')}
-                            title="Secret Transition to Lesson 1"
                         ></div>
 
                         <div className="relative z-10">
@@ -297,21 +304,6 @@
                                     <i className="fas fa-chalkboard-teacher text-indigo-600 mr-3"></i>
                                     Unit 7 Reading
                                 </h1>
-                                
-                                <div className="flex bg-slate-100 p-1 rounded-xl shadow-inner">
-                                    <button 
-                                        onClick={() => setActiveTab('lesson1')}
-                                        className={`px-6 py-2 rounded-lg text-sm font-bold tracking-wide transition-all ${activeTab === 'lesson1' ? 'bg-indigo-600 text-white shadow-md' : 'text-slate-600 hover:text-indigo-600'}`}
-                                    >
-                                        Lesson 1
-                                    </button>
-                                    <button 
-                                        onClick={() => setActiveTab('lesson2')}
-                                        className={`px-6 py-2 rounded-lg text-sm font-bold tracking-wide transition-all ${activeTab === 'lesson2' ? 'bg-emerald-600 text-white shadow-md' : 'text-slate-600 hover:text-emerald-600'}`}
-                                    >
-                                        Lesson 2
-                                    </button>
-                                </div>
                             </div>
                         </div>
                     </header>
